@@ -13,7 +13,7 @@ const Contact = () => {
         <a 
           href="mailto:hello@example.com" 
           className="inline-block px-8 py-4 border border-primary text-primary font-mono
-          hover:bg-primary/10 transition-colors duration-300"
+          hover:bg-primary/10 transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           Say Hello
         </a>

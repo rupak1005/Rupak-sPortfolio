@@ -40,7 +40,7 @@ const Hero = () => {
         <a 
           href="#work" 
           className="inline-block px-6 py-3 border border-primary text-primary font-mono
-          hover:bg-primary/10 transition-colors duration-300 fade-in"
+          hover:bg-primary/10 transform hover:-translate-y-2 transition-all duration-300 ease-in-out fade-in"
         >
           Check out my work!
         </a>
