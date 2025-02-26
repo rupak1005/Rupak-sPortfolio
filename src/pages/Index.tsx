@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
 import Contact from "@/components/Contact";
 import SocialLinks from "@/components/SocialLinks";
+import RightSideLinks from "@/components/RightSideLinks";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Featured />
       <Contact />
       <SocialLinks />
+      <RightSideLinks />
     </div>
   );
 };
