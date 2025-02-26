@@ -9,7 +9,7 @@ const SocialLinks = () => {
           href="https://github.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-200"
+          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           <Github size={20} />
         </a>
@@ -17,7 +17,7 @@ const SocialLinks = () => {
           href="https://instagram.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-200"
+          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           <Instagram size={20} />
         </a>
@@ -25,7 +25,7 @@ const SocialLinks = () => {
           href="https://twitter.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-200"
+          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           <Twitter size={20} />
         </a>
@@ -33,7 +33,7 @@ const SocialLinks = () => {
           href="https://linkedin.com" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-200"
+          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
         >
           <Linkedin size={20} />
         </a>
