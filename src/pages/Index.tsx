@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
 import Contact from "@/components/Contact";
+import SocialLinks from "@/components/SocialLinks";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <Hero />
       <Featured />
       <Contact />
+      <SocialLinks />
     </div>
   );
 };
