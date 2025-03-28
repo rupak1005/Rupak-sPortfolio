@@ -67,12 +67,6 @@ This project is deployed using **Netlify**. To deploy it yourself:
 
 ---
 
-## 📸 Screenshots
-
-_Include some screenshots of the website if needed._
-
----
-
 ## 🛠️ Folder Structure
 
 ```
