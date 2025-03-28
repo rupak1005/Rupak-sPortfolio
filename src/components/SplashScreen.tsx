@@ -31,7 +31,7 @@ const SplashScreen = () => {
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "300ms" }}>p</span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "450ms" }}>a</span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "600ms" }}>k</span>
-     
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1200ms" }}> </span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "1200ms" }}> </span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "1350ms" }}>K</span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "1500ms" }}>u</span>
