@@ -1,24 +1,92 @@
+# 🚀 Rupak's Portfolio
 
+![Netlify Status](https://api.netlify.com/api/v1/badges/db718536-cb6a-44c1-b38c-f6c5396a4c4c/deploy-status)
 
-## Project info
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience in web development. Built using **React, Vite, TypeScript, shadcn/ui, and Tailwind CSS**.
 
-**URL**: [https://lovable.dev/projects/7aa97239-b088-4ea6-a2af-02fa3fd24533](https://creative-spark-vista.lovable.app/)
+🔗 **Live Site:** [Rupak's Portfolio](https://rupak-s.netlify.app)
 
+---
 
-## What technologies are used for this project?
+## 📌 Features
 
-This project is built with .
+- 💻 **Modern UI** with **ShadCN + Tailwind**
+- 🚀 **Optimized Performance** with **Vite**
+- 🎨 **Dark Mode Support**
+- 🖼️ **Smooth Animations & Transitions**
+- 📱 **Fully Responsive Design**
+- 🌐 **Deployed on Netlify**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🛠️ Tech Stack
 
-Simply open [Lovable](https://lovable.dev/projects/7aa97239-b088-4ea6-a2af-02fa3fd24533) and click on Share -> Publish.
+- **Frontend:** React + TypeScript + Vite
+- **UI Library:** ShadCN/UI + Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Netlify
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/rupak1005/Rupak-sPortfolio.git
+cd Rupak-sPortfolio
+```
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
+
+### 3️⃣ Run Locally
+```sh
+npm run dev
+```
+Visit: `http://localhost:5173/`
+
+### 4️⃣ Build for Production
+```sh
+npm run build
+```
+
+---
+
+## 🌍 Deployment on Netlify
+
+This project is deployed using **Netlify**. To deploy it yourself:
+
+1. Push your code to **GitHub**
+2. Connect your repo to **Netlify**
+3. Set build settings:
+   - **Build Command:** `npm run build`
+   - **Publish Directory:** `dist`
+4. Deploy! 🚀
+
+---
+
+## 📸 Screenshots
+
+_Include some screenshots of the website if needed._
+
+---
+
+## 🛠️ Folder Structure
+
+```
+📂 src
+ ┣ 📂 components     # Reusable UI components
+ ┣ 📂 pages          # Different pages of the website
+ ┣ 📂 assets         # Images, fonts, etc.
+ ┣ 📂 styles         # Global styles & Tailwind config
+ ┣ 📜 App.tsx        # Main app entry file
+ ┣ 📜 main.tsx       # React entry point
+ ┗ 📜 vite.config.ts # Vite configuration
+```
+
+## 📄 License
+This project is open-source and available under the **MIT License**.
+
+---
