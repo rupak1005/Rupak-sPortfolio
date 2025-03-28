@@ -1,34 +1,70 @@
 
 import { ExternalLink, Github } from 'lucide-react';
-
 const projects = [
   {
-    title: "Halcyon Theme",
-    description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-    tags: ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+    title: "DeadlyBot",
+    description: "A Telegram bot for scheduling reminders and notifications.",
+    tags: ["Python", "Telegram API", "Automation"],
     links: {
-      github: "https://github.com/bchiang7/halcyon-site",
-      external: "https://halcyon-theme.netlify.app/"
-    }
+      github: "https://github.com/rupak1005/deadlyBot",
+    },
   },
   {
-    title: "Spotify Profile",
-    description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.",
-    tags: ["React", "Styled Components", "Express", "Spotify API"],
+    title: "DeadlyDots",
+    description: "My ARCH linux configs",
+    tags: ["Linux", ".files"],
     links: {
-      github: "https://github.com/bchiang7/spotify-profile",
-      external: "https://spotify-profile.herokuapp.com/"
-    }
+      github: "https://github.com/rupak1005/deadlydots",
+    },
   },
   {
-    title: "Devoted Health",
-    description: "A website and enrollment platform for a Medicare Advantage health plan providing members with the highest quality healthcare by pairing world-class physicians and healthcare experts with modern technology.",
-    tags: ["Next.js", "TypeScript", "Styled Components", "GraphQL"],
+    title: "Virtual Drum",
+    description: "A virtual drum kit using keyboard and mouse events.",
+    tags: ["JavaScript", "Web Audio API", "Pygame"],
     links: {
-      github: "#",
-      external: "https://www.devoted.com/"
-    }
-  }
+      github: "https://github.com/rupak1005/virtualDrum",
+    },
+  },
+  {
+    title: "Virtual Piano",
+    description: "A hand-tracking based piano using OpenVINO and Pygame.",
+    tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
+    links: {
+      github: "https://github.com/rupak1005/virtual_piano",
+    },
+  },
+  {
+    title: "Spam Mail Prediction",
+    description: "A machine learning model to detect spam emails.",
+    tags: ["Machine Learning", "NLP", "Scikit-Learn"],
+    links: {
+      github: "https://github.com/rupak1005/Spam-mail-prediction",
+    },
+  },
+  {
+    title: "Diabetes Prediction System",
+    description: "A predictive system for diabetes using SVM.",
+    tags: ["Machine Learning", "SVM", "Healthcare"],
+    links: {
+      github: "https://github.com/rupak1005/diabetes-prediction-system",
+    },
+  },
+  {
+    title: "Sonar Object Classification",
+    description: "Classifies objects as rocks or mines using ML.",
+    tags: ["Machine Learning", "Logistic Regression"],
+    links: {
+      github: "https://github.com/rupak1005/Sonar-Object-Classification",
+    },
+  },
+  {
+    title: "WebMajesty KOC32 (CipherSchools)",
+    description: "A web development project under CipherSchools.",
+    tags: ["Web Development", "JavaScript", "HTML & CSS"],
+    links: {
+      github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools",
+    },
+  },
 ];
 
 const Featured = () => {
