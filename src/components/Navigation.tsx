@@ -20,7 +20,7 @@ const Navigation = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-primary font-mono text-2xl">BC.</a>
+          <a href="#" className="text-primary font-mono text-2xl">RK.</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
