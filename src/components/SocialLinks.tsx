@@ -10,6 +10,7 @@ const SocialLinks = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          aria-label="GitHub"
         >
           <Github size={20} />
         </a>
@@ -18,6 +19,7 @@ const SocialLinks = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          aria-label="Instagram"
         >
           <Instagram size={20} />
         </a>
@@ -26,6 +28,7 @@ const SocialLinks = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          aria-label="Twitter"
         >
           <Twitter size={20} />
         </a>
@@ -34,10 +37,11 @@ const SocialLinks = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          aria-label="LinkedIn"
         >
           <Linkedin size={20} />
         </a>
-        <div className="w-[1px] h-24 bg-muted-foreground mt-4"></div>
+        <div className="w-[1px] h-24 bg-primary/30 mt-4"></div>
       </div>
     </div>
   );

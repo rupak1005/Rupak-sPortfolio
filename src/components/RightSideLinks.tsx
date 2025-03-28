@@ -9,15 +9,7 @@ const RightSideLinks = () => {
         >
           hello@example.com
         </a>
-        <a 
-          href="/resume.pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-mono text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out [writing-mode:vertical-rl]"
-        >
-          Resume
-        </a>
-        <div className="w-[1px] h-24 bg-muted-foreground mt-4"></div>
+        <div className="w-[1px] h-24 bg-primary/30 mt-4"></div>
       </div>
     </div>
   );

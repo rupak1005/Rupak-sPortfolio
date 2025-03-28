@@ -28,10 +28,13 @@
   html {
     scroll-behavior: smooth;
     @apply bg-background text-foreground;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--background);
   }
 
   body {
     @apply antialiased;
+    font-family: 'Calibre', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
   }
 }
 
@@ -50,12 +53,12 @@
   }
 
   .section-heading {
-    @apply flex items-center text-2xl font-semibold mb-8;
+    @apply flex items-center text-2xl font-semibold;
   }
 
   .section-heading::after {
     content: '';
-    @apply ml-4 h-[1px] w-full max-w-[300px] bg-border;
+    @apply ml-4 h-[1px] w-full max-w-[300px] bg-primary/30;
   }
 
   .numbered-heading {
@@ -77,4 +80,29 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Calibre font */
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
