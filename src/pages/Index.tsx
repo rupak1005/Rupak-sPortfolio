@@ -7,7 +7,6 @@ import SocialLinks from "@/components/SocialLinks";
 import RightSideLinks from "@/components/RightSideLinks";
 import ParticleBackground from "@/components/ParticleBackground";
 import SplashScreen from "@/components/SplashScreen";
-import Terminal from "@/components/Terminal";
 
 const Index = () => {
   return (
@@ -22,7 +21,6 @@ const Index = () => {
       </main>
       <SocialLinks />
       <RightSideLinks />
-      <Terminal />
       <footer className="py-6 text-center text-sm text-muted-foreground">
         <p>Designed & Built by Brittany Chiang</p>
       </footer>
