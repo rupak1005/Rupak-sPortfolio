@@ -7,7 +7,7 @@ const RightSideLinks = () => {
           href="mailto:hello@example.com"
           className="font-mono text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out [writing-mode:vertical-rl]"
         >
-          hello@example.com
+          rupak1005saini@example.com
         </a>
         <div className="w-[1px] h-24 bg-primary/30 mt-4"></div>
       </div>

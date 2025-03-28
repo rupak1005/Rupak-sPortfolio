@@ -3,7 +3,7 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     title: "DeadlyBot",
-    description: "A Telegram bot for scheduling reminders and notifications.",
+    description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications. It is built using Python and integrates with the Telegram Bot API.",
     tags: ["Python", "Telegram API", "Automation"],
     links: {
       github: "https://github.com/rupak1005/deadlyBot",
@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "DeadlyDots",
-    description: "My ARCH linux configs",
+    description: "my custom Arch Linux dotfiles, fine-tuned for efficiency, minimalism, and a sleek workflow. These configurations enhance productivity while maintaining a lightweight & aesthetic setup.",
     tags: ["Linux", ".files"],
     links: {
       github: "https://github.com/rupak1005/deadlydots",
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "Virtual Drum",
-    description: "A virtual drum kit using keyboard and mouse events.",
+    description: "This project is an AI-powered Virtual Drum Kit that uses OpenCV for hand tracking and Pygame for real-time sound playback. Users can play a virtual drum set using hand gestures, creating a fun and interactive drumming experience.",
     tags: ["JavaScript", "Web Audio API", "Pygame"],
     links: {
       github: "https://github.com/rupak1005/virtualDrum",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: "Virtual Piano",
-    description: "A hand-tracking based piano using OpenVINO and Pygame.",
+    description: "This project is a Virtual AI-powered Piano that uses OpenVINO for hand tracking and Pygame for sound playback. The model detects hand gestures and maps them to piano keys, allowing users to play a virtual piano in real-time.",
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
       github: "https://github.com/rupak1005/virtual_piano",
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: "Spam Mail Prediction",
-    description: "A machine learning model to detect spam emails.",
+    description: "A machine learning project that classifies emails as Spam or Ham using Logistic Regression. This project processes textual email data, converts it into numerical features using TfidfVectorizer, and predicts the category of emails.",
     tags: ["Machine Learning", "NLP", "Scikit-Learn"],
     links: {
       github: "https://github.com/rupak1005/Spam-mail-prediction",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: "Diabetes Prediction System",
-    description: "A predictive system for diabetes using SVM.",
+    description: "This project is a machine learning system that predicts whether a person is diabetic based on specific medical features using a Support Vector Machine (SVM) classifier.",
     tags: ["Machine Learning", "SVM", "Healthcare"],
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system",
@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: "Sonar Object Classification",
-    description: "Classifies objects as rocks or mines using ML.",
+    description: "A machine learning project to classify sonar signals as rocks or mines using Logistic Regression.",
     tags: ["Machine Learning", "Logistic Regression"],
     links: {
       github: "https://github.com/rupak1005/Sonar-Object-Classification",

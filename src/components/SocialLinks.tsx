@@ -6,7 +6,7 @@ const SocialLinks = () => {
     <div className="fixed left-10 bottom-0 hidden md:block">
       <div className="flex flex-col items-center gap-6">
         <a 
-          href="https://github.com" 
+          href="https://github.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
@@ -15,7 +15,7 @@ const SocialLinks = () => {
           <Github size={20} />
         </a>
         <a 
-          href="https://instagram.com" 
+          href="https://instagram.com/rupakxs" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
@@ -24,7 +24,7 @@ const SocialLinks = () => {
           <Instagram size={20} />
         </a>
         <a 
-          href="https://twitter.com" 
+          href="https://twitter.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
@@ -33,7 +33,7 @@ const SocialLinks = () => {
           <Twitter size={20} />
         </a>
         <a 
-          href="https://linkedin.com" 
+          href="https://linkedin.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"

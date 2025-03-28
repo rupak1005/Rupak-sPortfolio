@@ -26,21 +26,19 @@ const SplashScreen = () => {
         </svg>
       </div>
       <div className="font-mono text-primary text-xl relative">
-        <span className="inline-block animate-fadeIn">B</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "150ms" }}>r</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "300ms" }}>i</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "450ms" }}>t</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "600ms" }}>t</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "750ms" }}>a</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "900ms" }}>n</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1050ms" }}>y</span>
+        <span className="inline-block animate-fadeIn">R</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "150ms" }}>u</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "300ms" }}>p</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "450ms" }}>a</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "600ms" }}>k</span>
+     
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "1200ms" }}> </span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1350ms" }}>C</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1500ms" }}>h</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1650ms" }}>i</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1350ms" }}>K</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1500ms" }}>u</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1650ms" }}>m</span>
         <span className="inline-block animate-fadeIn" style={{ animationDelay: "1800ms" }}>a</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1950ms" }}>n</span>
-        <span className="inline-block animate-fadeIn" style={{ animationDelay: "2100ms" }}>g</span>
+        <span className="inline-block animate-fadeIn" style={{ animationDelay: "1950ms" }}>r</span>
+        {/* <span className="inline-block animate-fadeIn" style={{ animationDelay: "2100ms" }}>g</span> */}
       </div>
       <div className="mt-16 w-24 h-1 bg-muted overflow-hidden">
         <div className="h-full bg-primary animate-progressBar"></div>
