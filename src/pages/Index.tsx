@@ -5,10 +5,12 @@ import Featured from "@/components/Featured";
 import Contact from "@/components/Contact";
 import SocialLinks from "@/components/SocialLinks";
 import RightSideLinks from "@/components/RightSideLinks";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen relative">
+      <ParticleBackground />
       <Navigation />
       <main className="px-0 md:px-12 lg:px-24 pt-20">
         <Hero />
