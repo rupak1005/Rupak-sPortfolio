@@ -96,7 +96,7 @@ const Terminal = () => {
           foreground: '#e6f1ff',
           cursor: '#64ffda',
           cursorAccent: '#112240',
-          selection: 'rgba(100, 255, 218, 0.3)',
+          // Removed the invalid 'selection' property
           black: '#112240',
           brightBlack: '#8892b0',
           red: '#ff5555',
