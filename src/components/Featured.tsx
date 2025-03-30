@@ -1,6 +1,26 @@
-
 import { ExternalLink, Github } from 'lucide-react';
 const projects = [
+  {
+    "title": "Manageo-Productum",
+    "description": "A modern web application for managing product catalogs, built with React, TypeScript, and shadcn/ui components.",
+    "tags": ["React", "TypeScript", "shadcn/ui"],
+    "links": {
+      "github": "https://github.com/rupak1005/manageo-productum",
+      "external": "https://manageo-productum.netlify.app/"
+    },
+    image: "/images/projects/manageo-productum.png"
+  },
+  {
+    "title": "Chat-App",
+    "description": "Snappy is chat application build with the power of MERN Stack.",
+    "tags": ["MERN Stack", "React", "TypeScript", "Tailwind CSS"],
+    "links": {
+      "github": "https://github.com/rupak1005/chat-app",
+      "external": "https://snappy-chat-app.vercel.app/"
+    },
+    image: "/images/projects/chat-app.png"
+    
+  },
   {
     title: "DeadlyBot",
     description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications. It is built using Python and integrates with the Telegram Bot API.",
@@ -8,6 +28,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/deadlyBot",
     },
+    image: "/images/projects/deadlybot.png"
   },
   {
     title: "DeadlyDots",
@@ -16,6 +37,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/deadlydots",
     },
+    image: "/images/projects/deadlydots.png"
   },
   {
     title: "Virtual Drum",
@@ -24,6 +46,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtualDrum",
     },
+    image: "/images/projects/virtual-drum.png"
   },
   {
     title: "Virtual Piano",
@@ -32,6 +55,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtual_piano",
     },
+    image: "/images/projects/virtual-piano.png"
   },
   {
     title: "Spam Mail Prediction",
@@ -40,6 +64,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Spam-mail-prediction",
     },
+    image: "/images/projects/spam-mail.png"
   },
   {
     title: "Diabetes Prediction System",
@@ -48,6 +73,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system",
     },
+    image: "/images/projects/diabetes-prediction.png"
   },
   {
     title: "Sonar Object Classification",
@@ -87,6 +113,12 @@ const Featured = () => {
               <div className={`md:col-span-7 relative aspect-video bg-card rounded-lg overflow-hidden group ${
                 index % 2 === 0 ? '' : 'md:order-last'
               }`}>
+                <img 
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75"
+                />
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
               </div>
 
