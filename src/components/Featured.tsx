@@ -19,17 +19,15 @@ const projects = [
       "external": "https://snappy-chat-app.vercel.app/"
     },
     image: "/images/projects/chat-app.png"
-    
+
   },
   {
     title: "DeadlyBot",
     description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications. It is built using Python and integrates with the Telegram Bot API.",
     tags: ["Python", "Telegram API", "Automation"],
     links: {
-      github: "https://github.com/rupak1005/deadlyBot",
+      github: "https://github.com/rupak1005/deadlyBot",}
     },
-    image: "/images/projects/deadlybot.png"
-  },
   {
     title: "DeadlyDots",
     description: "my custom Arch Linux dotfiles, fine-tuned for efficiency, minimalism, and a sleek workflow. These configurations enhance productivity while maintaining a lightweight & aesthetic setup.",
@@ -45,8 +43,7 @@ const projects = [
     tags: ["JavaScript", "Web Audio API", "Pygame"],
     links: {
       github: "https://github.com/rupak1005/virtualDrum",
-    },
-    image: "/images/projects/virtual-drum.png"
+    }
   },
   {
     title: "Virtual Piano",
@@ -54,8 +51,7 @@ const projects = [
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
       github: "https://github.com/rupak1005/virtual_piano",
-    },
-    image: "/images/projects/virtual-piano.png"
+    }
   },
   {
     title: "Spam Mail Prediction",
@@ -63,8 +59,7 @@ const projects = [
     tags: ["Machine Learning", "NLP", "Scikit-Learn"],
     links: {
       github: "https://github.com/rupak1005/Spam-mail-prediction",
-    },
-    image: "/images/projects/spam-mail.png"
+    }
   },
   {
     title: "Diabetes Prediction System",
@@ -72,8 +67,7 @@ const projects = [
     tags: ["Machine Learning", "SVM", "Healthcare"],
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system",
-    },
-    image: "/images/projects/diabetes-prediction.png"
+    }
   },
   {
     title: "Sonar Object Classification",
@@ -113,44 +107,62 @@ const Featured = () => {
               <div className={`md:col-span-7 relative aspect-video bg-card rounded-lg overflow-hidden group ${
                 index % 2 === 0 ? '' : 'md:order-last'
               }`}>
-                <img 
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75"
-                />
-                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
+                <a 
+                  href={project.links.external || project.links.github} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block w-full h-full relative"
+                >
+                  <img 
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="text-white font-bold">Go to Project</span>
+                  </div>
+                </a>
               </div>
 
               {/* Project Content */}
-              <div className={`md:col-span-7 md:col-start-6 md:row-start-1 z-10 ${
-                index % 2 === 0 ? 'md:text-right' : ''
-              }`}>
-                <p className="font-mono text-primary text-sm mb-2">Featured Project</p>
-                <h3 className="text-2xl font-bold mb-4">
-                  <a href={project.links.external} className="hover:text-primary transition-colors">
-                    {project.title}
-                  </a>
-                </h3>
-                <div className="bg-card p-6 rounded-lg mb-4 shadow-xl">
+              <div className="md:col-span-5">
+                <p className="font-mono text-primary mb-2">Featured Project</p>
+                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                <div className="bg-card p-6 rounded-lg mb-4">
                   <p className="text-muted-foreground">{project.description}</p>
                 </div>
-                <ul className={`flex flex-wrap gap-3 font-mono text-sm text-muted-foreground mb-4 ${
-                  index % 2 === 0 ? 'md:justify-end' : ''
+                <ul className={`flex flex-wrap gap-3 text-sm font-mono mb-4 ${
+                  index % 2 === 0 ? '' : 'md:justify-end'
                 }`}>
                   {project.tags.map((tag, i) => (
-                    <li key={i}>{tag}</li>
+                    <li key={i} className="text-primary">{tag}</li>
                   ))}
                 </ul>
                 <div className={`flex gap-4 ${
-                  index % 2 === 0 ? 'md:justify-end' : ''
+                  index % 2 === 0 ? '' : 'md:justify-end'
                 }`}>
-                  <a href={project.links.github} className="text-foreground hover:text-primary transition-colors" aria-label="GitHub Repository">
-                    <Github size={20} />
-                  </a>
-                  <a href={project.links.external} className="text-foreground hover:text-primary transition-colors" aria-label="External Link">
-                    <ExternalLink size={20} />
-                  </a>
+                  {project.links.github && (
+                    <a 
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                  )}
+                  {project.links.external && (
+                    <a 
+                      href={project.links.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
@@ -7,6 +6,8 @@ import SocialLinks from "@/components/SocialLinks";
 import RightSideLinks from "@/components/RightSideLinks";
 import ParticleBackground from "@/components/ParticleBackground";
 import SplashScreen from "@/components/SplashScreen";
+import About from "@/components/About";
+import Education from "@/components/Education";
 
 const Index = () => {
   return (
@@ -16,6 +17,8 @@ const Index = () => {
       <Navigation />
       <main className="px-0 md:px-12 lg:px-24 pt-20">
         <Hero />
+        <About />
+        <Education />
         <Featured />
         <Contact />
       </main>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -25,7 +24,7 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#about" className="nav-link"><span className="font-mono text-primary text-sm mr-1">01.</span> About</a>
-            <a href="#experience" className="nav-link"><span className="font-mono text-primary text-sm mr-1">02.</span> Experience</a>
+            <a href="#education" className="nav-link"><span className="font-mono text-primary text-sm mr-1">02.</span> Education</a>
             <a href="#work" className="nav-link"><span className="font-mono text-primary text-sm mr-1">03.</span> Work</a>
             <a href="#contact" className="nav-link"><span className="font-mono text-primary text-sm mr-1">04.</span> Contact</a>
             <a 
@@ -56,8 +55,8 @@ const Navigation = () => {
             <a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               <span className="font-mono text-primary text-sm block text-center mb-1">01.</span> About
             </a>
-            <a href="#experience" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">02.</span> Experience
+            <a href="#education" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              <span className="font-mono text-primary text-sm block text-center mb-1">02.</span> Education
             </a>
             <a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               <span className="font-mono text-primary text-sm block text-center mb-1">03.</span> Work
