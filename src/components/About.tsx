@@ -12,8 +12,7 @@ const About = () => {
               Currently, I'm focused on building accessible, human-centered products while pursuing my B.Tech in Computer Science.
             </p>
             <p>
-              My journey in programming started back in high school when I first discovered Python. Since then, 
-              I've had the privilege of working on diverse projects, from AI-powered applications to full-stack web platforms.
+            My journey in programming started back in high school when I first discovered Python. Since then, I've had the privilege of working on diverse projects, from AI-powered applications to full-stack web platforms. Along the way, I also discovered Linux, exploring different distributions like Arch, Debian, and Red Hat, which deepened my interest in system customization and open-source technologies.
             </p>
             <p>
               Here are a few technologies I've been working with recently:
