@@ -40,6 +40,14 @@ const Hero = () => {
         >
           View My Work
         </a>
+        <a 
+          href="/resume.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-secondary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors duration-300"
+        >
+          Download Resume
+        </a>
       </div>
     </section>
   );
