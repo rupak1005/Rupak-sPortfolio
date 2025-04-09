@@ -1,6 +1,26 @@
 import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
+    "title": "AI Legal Document Scanner",
+    "description": "An AI-powered web app that extracts, classifies, and summarizes scanned legal documents using OCR, LayoutLM, and NLP.",
+    "tags": ["Python", "Streamlit", "OCR", "Transformers", "LayoutLM", "NLP"],
+    "links": {
+      "github": "https://github.com/rupak1005/ai-legal-document-scanner",
+      "external": "https://ai-legal-document-scanner.streamlit.app/"
+    },
+    image: "/images/projects/ai-legal-doc-scanner.png"
+  },
+  {
+    "title": "File Encryption Tool",
+    "description": "A secure Python-based GUI tool for file encryption and decryption with password protection, drag-and-drop support, and export options.",
+    "tags": ["Python", "Tkinter", "Cryptography", "GUI", "Security"],
+    "links": {
+      "github": "https://github.com/rupak1005/file-encryption-tool",
+      "external": "https://file-encryption-tool.streamlit.app/"
+    },
+    image: "/images/projects/file-encryption-tool.png"
+  },
+  {
     "title": "Manageo-Productum",
     "description": "A modern web application for managing product catalogs, built with React, TypeScript, and shadcn/ui components.",
     "tags": ["React", "TypeScript", "shadcn/ui"],
