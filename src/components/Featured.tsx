@@ -1,113 +1,119 @@
 import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
-    "title": "AI Legal Document Scanner",
-    "description": "An AI-powered web app that extracts, classifies, and summarizes scanned legal documents using OCR, LayoutLM, and NLP.",
-    "tags": ["Python", "Streamlit", "OCR", "Transformers", "LayoutLM", "NLP"],
-    "links": {
-      "github": "https://github.com/rupak1005/ai-legal-document-scanner",
-      "external": "https://ai-legal-document-scanner.streamlit.app/"
+    title: "AI Legal Document Scanner",
+    description: "An AI-powered web app that extracts, classifies, and summarizes scanned legal documents using OCR, LayoutLM, and NLP.",
+    tags: ["Python", "Streamlit", "OCR", "Transformers", "LayoutLM", "NLP"],
+    links: {
+      github: "https://github.com/rupak1005/ai-legal-document-scanner",
+      external: "https://ai-legal-document-scanner.streamlit.app/"
     },
     image: "/images/projects/ai-legal-doc-scanner.png"
   },
   {
-    "title": "File Encryption Tool",
-    "description": "A secure Python-based GUI tool for file encryption and decryption with password protection, drag-and-drop support, and export options.",
-    "tags": ["Python", "Tkinter", "Cryptography", "GUI", "Security"],
-    "links": {
-      "github": "https://github.com/rupak1005/file-encryption-tool",
-      "external": "https://file-encryption-tool.streamlit.app/"
+    title: "File Encryption Tool",
+    description: "A secure Python-based GUI tool for file encryption and decryption with password protection, drag-and-drop support, and export options.",
+    tags: ["Python", "Tkinter", "Cryptography", "GUI", "Security"],
+    links: {
+      github: "https://github.com/rupak1005/file-encryption-tool",
+      external: "https://file-encryption-tool.streamlit.app/"
     },
     image: "/images/projects/file-encryption-tool.png"
   },
   {
-    "title": "Manageo-Productum",
-    "description": "A modern web application for managing product catalogs, built with React, TypeScript, and shadcn/ui components.",
-    "tags": ["React", "TypeScript", "shadcn/ui"],
-    "links": {
-      "github": "https://github.com/rupak1005/manageo-productum",
-      "external": "https://manageo-productum.netlify.app/"
+    title: "Manageo-Productum",
+    description: "A modern web application for managing product catalogs, built with React, TypeScript, and shadcn/ui components.",
+    tags: ["React", "TypeScript", "shadcn/ui"],
+    links: {
+      github: "https://github.com/rupak1005/manageo-productum",
+      external: "https://manageo-productum.netlify.app/"
     },
     image: "/images/projects/manageo-productum.png"
   },
   {
-    "title": "Chat-App",
-    "description": "Snappy is chat application build with the power of MERN Stack.",
-    "tags": ["MERN Stack", "React", "TypeScript", "Tailwind CSS"],
-    "links": {
-      "github": "https://github.com/rupak1005/chat-app",
-      "external": "https://snappy-chat-app.vercel.app/"
+    title: "Chat-App",
+    description: "Snappy is a chat application built with the power of the MERN Stack.",
+    tags: ["MERN Stack", "React", "TypeScript", "Tailwind CSS"],
+    links: {
+      github: "https://github.com/rupak1005/chat-app",
+      external: "https://snappy-chat-app.vercel.app/"
     },
     image: "/images/projects/chat-app.png"
-
   },
   {
     title: "DeadlyBot",
-    description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications. It is built using Python and integrates with the Telegram Bot API.",
+    description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications using the Telegram Bot API.",
     tags: ["Python", "Telegram API", "Automation"],
     links: {
-      github: "https://github.com/rupak1005/deadlyBot",},
-      image: "/images/projects/deadlybot.png"
+      github: "https://github.com/rupak1005/deadlyBot"
     },
+    image: "/images/projects/deadlybot.jpg"
+  },
   {
     title: "DeadlyDots",
-    description: "my custom Arch Linux dotfiles, fine-tuned for efficiency, minimalism, and a sleek workflow. These configurations enhance productivity while maintaining a lightweight & aesthetic setup.",
-    tags: ["Linux", ".files"],
+    description: "My custom Arch Linux dotfiles, fine-tuned for efficiency, minimalism, and a sleek workflow. These configurations enhance productivity while maintaining a lightweight & aesthetic setup.",
+    tags: ["Linux", "Dotfiles"],
     links: {
-      github: "https://github.com/rupak1005/deadlydots",
+      github: "https://github.com/rupak1005/deadlydots"
     },
     image: "/images/projects/deadlydots.png"
   },
   {
     title: "Virtual Drum",
-    description: "This project is an AI-powered Virtual Drum Kit that uses OpenCV for hand tracking and Pygame for real-time sound playback. Users can play a virtual drum set using hand gestures, creating a fun and interactive drumming experience.",
-    tags: ["JavaScript", "Web Audio API", "Pygame"],
+    description: "An AI-powered virtual drum kit using OpenCV for hand tracking and Pygame for real-time sound playback. Play drums using hand gestures!",
+    tags: ["AI", "OpenCV", "Pygame"],
     links: {
-      github: "https://github.com/rupak1005/virtualDrum",
-    }
+      github: "https://github.com/rupak1005/virtualDrum"
+    },
+    image: "/images/projects/virtualdrum.png"
   },
   {
     title: "Virtual Piano",
-    description: "This project is a Virtual AI-powered Piano that uses OpenVINO for hand tracking and Pygame for sound playback. The model detects hand gestures and maps them to piano keys, allowing users to play a virtual piano in real-time.",
+    description: "A virtual AI-powered piano that uses OpenVINO for hand tracking and Pygame for sound playback. Detects hand gestures to play keys in real-time.",
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
-      github: "https://github.com/rupak1005/virtual_piano",
+      github: "https://github.com/rupak1005/virtual_piano"
     },
-    image: "/images/projects/virtualpiano.png"
+    image: "/images/projects/virtualpiano.jpeg"
   },
   {
     title: "Spam Mail Prediction",
-    description: "A machine learning project that classifies emails as Spam or Ham using Logistic Regression. This project processes textual email data, converts it into numerical features using TfidfVectorizer, and predicts the category of emails.",
+    description: "Classifies emails as Spam or Ham using Logistic Regression. Processes text data with TfidfVectorizer and predicts email categories.",
     tags: ["Machine Learning", "NLP", "Scikit-Learn"],
     links: {
-      github: "https://github.com/rupak1005/Spam-mail-prediction",
-    }
+      github: "https://github.com/rupak1005/Spam-mail-prediction"
+    },
+    image: "/images/projects/spam-mail.png"
   },
   {
     title: "Diabetes Prediction System",
-    description: "This project is a machine learning system that predicts whether a person is diabetic based on specific medical features using a Support Vector Machine (SVM) classifier.",
+    description: "A machine learning system that predicts whether a person is diabetic based on medical features using an SVM classifier.",
     tags: ["Machine Learning", "SVM", "Healthcare"],
     links: {
-      github: "https://github.com/rupak1005/diabetes-prediction-system",
-    }
+      github: "https://github.com/rupak1005/diabetes-prediction-system"
+    },
+    image: "/images/projects/diabetes-predictor.png"
   },
   {
     title: "Sonar Object Classification",
-    description: "A machine learning project to classify sonar signals as rocks or mines using Logistic Regression.",
+    description: "Classifies sonar signals as rocks or mines using Logistic Regression.",
     tags: ["Machine Learning", "Logistic Regression"],
     links: {
-      github: "https://github.com/rupak1005/Sonar-Object-Classification",
+      github: "https://github.com/rupak1005/Sonar-Object-Classification"
     },
+    image: "/images/projects/sonar-object.png"
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
-    description: "A web development project under CipherSchools.",
+    description: "A web development project built under CipherSchools’ KOC32 initiative.",
     tags: ["Web Development", "JavaScript", "HTML & CSS"],
     links: {
-      github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools",
+      github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
     },
-  },
+    image: "/images/projects/webmajesty.png"
+  }
 ];
+
 
 const Featured = () => {
   return (
