@@ -9,7 +9,7 @@ const SocialLinks = () => {
           href="https://github.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="social-link-hover"
           aria-label="GitHub"
         >
           <Github size={20} />
@@ -18,7 +18,7 @@ const SocialLinks = () => {
           href="https://instagram.com/rupakxs" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="social-link-hover"
           aria-label="Instagram"
         >
           <Instagram size={20} />
@@ -27,7 +27,7 @@ const SocialLinks = () => {
           href="https://twitter.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="social-link-hover"
           aria-label="Twitter"
         >
           <Twitter size={20} />
@@ -36,7 +36,7 @@ const SocialLinks = () => {
           href="https://linkedin.com/rupak1005" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          className="social-link-hover"
           aria-label="LinkedIn"
         >
           <Linkedin size={20} />

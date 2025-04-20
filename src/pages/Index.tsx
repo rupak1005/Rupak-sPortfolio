@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
@@ -8,6 +9,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 import SplashScreen from "@/components/SplashScreen";
 import About from "@/components/About";
 import Education from "@/components/Education";
+import Certifications from "@/components/Certifications";
 
 const Index = () => {
   return (
@@ -20,6 +22,7 @@ const Index = () => {
         <About />
         <Education />
         <Featured />
+        <Certifications />
         <Contact />
       </main>
       <SocialLinks />

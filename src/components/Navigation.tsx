@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -19,18 +20,20 @@ const Navigation = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-primary font-mono text-2xl">RK.</a>
+          <a href="#" className="text-primary font-mono text-2xl hover:scale-110 transition-transform duration-300">RK.</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#about" className="nav-link"><span className="font-mono text-primary text-sm mr-1">01.</span> About</a>
             <a href="#education" className="nav-link"><span className="font-mono text-primary text-sm mr-1">02.</span> Education</a>
             <a href="#work" className="nav-link"><span className="font-mono text-primary text-sm mr-1">03.</span> Work</a>
-            <a href="#contact" className="nav-link"><span className="font-mono text-primary text-sm mr-1">04.</span> Contact</a>
+            <a href="#certifications" className="nav-link"><span className="font-mono text-primary text-sm mr-1">04.</span> Certifications</a>
+            <a href="#contact" className="nav-link"><span className="font-mono text-primary text-sm mr-1">05.</span> Contact</a>
             <a 
               href="/resume.pdf" 
               className="ml-4 px-4 py-2 border border-primary text-primary font-mono rounded
-              hover:bg-primary/10 transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              hover:bg-primary/10 transform hover:-translate-y-1 transition-all duration-300 ease-in-out
+              hover:shadow-lg hover:shadow-primary/10"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -40,7 +43,7 @@ const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className="md:hidden text-foreground hover:text-primary transition-colors duration-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -61,8 +64,11 @@ const Navigation = () => {
             <a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               <span className="font-mono text-primary text-sm block text-center mb-1">03.</span> Work
             </a>
+            <a href="#certifications" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+              <span className="font-mono text-primary text-sm block text-center mb-1">04.</span> Certifications
+            </a>
             <a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">04.</span> Contact
+              <span className="font-mono text-primary text-sm block text-center mb-1">05.</span> Contact
             </a>
             <a 
               href="/resume.pdf" 
