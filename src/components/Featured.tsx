@@ -46,7 +46,8 @@ const projects = [
     description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications. It is built using Python and integrates with the Telegram Bot API.",
     tags: ["Python", "Telegram API", "Automation"],
     links: {
-      github: "https://github.com/rupak1005/deadlyBot",}
+      github: "https://github.com/rupak1005/deadlyBot",},
+      image: "/images/projects/deadlybot.png"
     },
   {
     title: "DeadlyDots",
@@ -71,7 +72,8 @@ const projects = [
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
       github: "https://github.com/rupak1005/virtual_piano",
-    }
+    },
+    image: "/images/projects/virtualpiano.png"
   },
   {
     title: "Spam Mail Prediction",
