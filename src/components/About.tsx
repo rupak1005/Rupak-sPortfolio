@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <section id="about" className="py-24 px-6">
@@ -34,15 +36,77 @@ const About = () => {
               ))}
             </ul>
           </div>
-          <div className="relative group">
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-primary/10">
-              <img 
-                src="/images/profile.jpg" 
-                alt="Rupak Kumar" 
-                className="w-full h-full object-cover mix-blend-multiply grayscale contrast-100 brightness-90 hover:filter-none transition-all duration-300"
+          <div className="flex items-center justify-center">
+            <motion.div 
+              className="relative w-72 h-72 md:w-[32rem] md:h-[32rem] lg:w-[36rem] lg:h-[36rem] rounded-lg overflow-hidden"
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.div 
+                className="absolute inset-0 border-2 border-primary/20 rounded-lg"
+                animate={{
+                  boxShadow: [
+                    "0 0 0 0 rgba(var(--primary), 0.6)",
+                    "0 0 0 15px rgba(var(--primary), 0)",
+                    "0 0 0 0 rgba(var(--primary), 0.6)"
+                  ]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
               />
-              <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-5 translate-y-5 group-hover:translate-x-4 group-hover:translate-y-4 transition-transform duration-300" />
-            </div>
+              <motion.div 
+                className="absolute inset-2 border-2 border-primary/10 rounded-lg"
+                animate={{
+                  boxShadow: [
+                    "0 0 0 0 rgba(var(--primary), 0.4)",
+                    "0 0 0 12px rgba(var(--primary), 0)",
+                    "0 0 0 0 rgba(var(--primary), 0.4)"
+                  ]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5
+                }}
+              />
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"
+                animate={{
+                  opacity: [0.5, 0.8, 0.5],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+              <motion.div
+                className="absolute inset-0 bg-primary/30 mix-blend-overlay"
+                initial={{ opacity: 1 }}
+                whileHover={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.div
+                className="absolute inset-0 bg-primary/40 mix-blend-multiply"
+                initial={{ opacity: 1 }}
+                whileHover={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              />
+              <motion.img
+                src="/images/profile.png"
+                alt="Rupak Kumar"
+                className="w-full h-full object-cover p-1"
+                whileHover={{ 
+                  filter: "brightness(1.1) contrast(1.05)",
+                  scale: 1.02
+                }}
+                transition={{ duration: 0.3 }}
+              />
+            </motion.div>
           </div>
         </div>
       </div>
