@@ -4,19 +4,22 @@ const Education = () => {
       school: "Lovely Professional University",
       degree: "Bachelor of Technology in Computer Science",
       duration: "2022 - 2026",
-      description: "Currently pursuing B.Tech in Computer Science with specialization in Full Stack Development and Machine Learning."
+      description: "Currently pursuing B.Tech in Computer Science with specialization in Full Stack Development and Machine Learning.",
+      marks: "CGPA: 7.5"
     },
     {
       school: "Kendriya Vidyalaya",
       degree: "Higher Secondary Education (XII)",
       duration: "2019 - 2021",
-      description: "Completed senior secondary education with focus on Physics, Chemistry, and Mathematics."
+      description: "Completed senior secondary education with focus on Physics, Chemistry, and Mathematics.",
+      marks: "Percentage: 82%"
     },
     {
       school: "Kendriya Vidyalaya",
       degree: "Secondary Education (X)",
       duration: "2018 - 2019",
-      description: "Completed secondary education with distinction."
+      description: "Completed secondary education with distinction.",
+      marks: "Percentage: 86.2%"
     }
   ];
 
@@ -32,7 +35,12 @@ const Education = () => {
                 <span className="text-primary font-mono">{edu.duration}</span>
               </div>
               <h4 className="text-lg font-semibold mb-2">{edu.degree}</h4>
-              <p className="text-muted-foreground">{edu.description}</p>
+              <div className="space-y-2">
+                <p className="text-muted-foreground">{edu.description}</p>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary font-mono">{edu.marks}</span>
+                </div>
+              </div>
             </div>
           ))}
         </div>
