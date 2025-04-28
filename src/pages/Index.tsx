@@ -11,6 +11,7 @@ import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { cn } from "@/lib/utils";
+import ViewCounter from "@/components/ViewCounter";
 
 const Index = () => {
   return (
@@ -43,6 +44,7 @@ const Index = () => {
       <SocialLinks />
       <RightSideLinks />
       <footer className="py-6 text-center text-sm text-muted-foreground">
+        <div className="mb-2"><ViewCounter /></div>
         <p>Design Inspired By Brittany Chiang</p>
       </footer>
     </div>

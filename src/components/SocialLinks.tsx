@@ -1,5 +1,4 @@
-
-import { Github, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Github, Instagram, Twitter, Linkedin, CodeXml } from 'lucide-react';
 
 const SocialLinks = () => {
   return (
@@ -40,6 +39,15 @@ const SocialLinks = () => {
           aria-label="LinkedIn"
         >
           <Linkedin size={20} />
+        </a>
+        <a 
+          href="https://leetcode.com/u/rupak1005saini/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="social-link-hover"
+          aria-label="LeetCode"
+        >
+          <CodeXml size={20} />
         </a>
         <div className="w-[1px] h-24 bg-primary/30 mt-4"></div>
       </div>

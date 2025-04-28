@@ -1,5 +1,17 @@
 import { ExternalLink, Github } from 'lucide-react';
+import ViewCounter from '@/components/ViewCounter';
+
 const projects = [
+  {
+    title: "AI Safety Incident Dashboard",
+    description: "A fully featured, performant, and responsive AI Safety Incident Dashboard. Features glassmorphism UI, dark/light mode, animated transitions, persistent state, CSV export, and rich data visualizations.",
+    tags: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Recharts"],
+    links: {
+      github: "https://github.com/rupak1005/vigilant-incident-view",
+      external: "https://incidentview.netlify.app"
+    },
+    image: "/images/vigilant-incident-view.jpg"
+  },
   {
     title: "AI Legal Document Scanner",
     description: "An AI-powered web app that extracts, classifies, and summarizes scanned legal documents using OCR, LayoutLM, and NLP.",
@@ -28,7 +40,7 @@ const projects = [
       github: "https://github.com/rupak1005/manageo-productum",
       external: "https://manageo-productum.netlify.app/"
     },
-    image: "/images/projects/manageo-productum.png"
+    image: "/images/projects/manageo-productum.jpg"
   },
   {
     title: "Chat-App",
@@ -47,7 +59,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/deadlyBot"
     },
-    image: "/images/projects/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "DeadlyDots",
@@ -65,25 +77,25 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtualDrum"
     },
-    image: "/home/deadlyr/Rupak-sPortfolio/public/images/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "Virtual Piano",
     description: "A virtual AI-powered piano that uses OpenVINO for hand tracking and Pygame for sound playback. Detects hand gestures to play keys in real-time.",
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
-      github: "https://github.com/rupak1005/virtual_piano"
+      github: "/images/projects/github.png"
     },
-    image: "/images/projects/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "Spam Mail Prediction",
     description: "Classifies emails as Spam or Ham using Logistic Regression. Processes text data with TfidfVectorizer and predicts email categories.",
     tags: ["Machine Learning", "NLP", "Scikit-Learn"],
     links: {
-      github: "https://github.com/rupak1005/Spam-mail-prediction"
+      github: "/images/projects/github.png"
     },
-    image: "/images/projects/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "Diabetes Prediction System",
@@ -92,7 +104,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system"
     },
-    image: "/images/projects/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "Sonar Object Classification",
@@ -101,7 +113,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Sonar-Object-Classification"
     },
-    image: "/images/projects/sXK51.png"
+    image: "/images/projects/github.png"
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
@@ -110,8 +122,9 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
     },
-    image: "/images/projects/sXK51.png"
-  }
+    image: "/images/projects/github.png"
+  },
+  
 ];
 
 
