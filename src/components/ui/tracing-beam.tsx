@@ -1,12 +1,12 @@
-
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
   useTransform,
   useScroll,
+  useVelocity,
   useSpring,
-} from "framer-motion";
+} from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const TracingBeam = ({
@@ -19,57 +19,30 @@ export const TracingBeam = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end end"],
+    offset: ["start start", "end start"],
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
   const [svgHeight, setSvgHeight] = useState(0);
 
   useEffect(() => {
-    const updateHeight = () => {
-      if (contentRef.current) {
-        setSvgHeight(contentRef.current.offsetHeight);
-      }
-    };
-    
-    // Initial height calculation
-    updateHeight();
-    
-    // Also update on window resize
-    window.addEventListener("resize", updateHeight);
-    
-    // Create a mutation observer to detect content changes
-    const observer = new MutationObserver(updateHeight);
-    
     if (contentRef.current) {
-      observer.observe(contentRef.current, { 
-        childList: true, 
-        subtree: true,
-        attributes: true 
-      });
+      setSvgHeight(contentRef.current.offsetHeight);
     }
-    
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-      observer.disconnect();
-    };
   }, []);
 
-  // Smoother spring physics for beam position
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {
-      stiffness: 300,
-      damping: 50,
-      restDelta: 0.1,
+      stiffness: 500,
+      damping: 90,
     },
   );
   const y2 = useSpring(
     useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
-      stiffness: 300,
-      damping: 50,
-      restDelta: 0.1,
+      stiffness: 500,
+      damping: 90,
     },
   );
 
@@ -90,7 +63,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="border-netural-200 ml-[27px] flex h-4 w-4 items-center justify-center border shadow-sm"
+          className="border-netural-200 ml-[27px] flex h-4 w-4 items-center justify-center rounded-full border shadow-sm"
         >
           <motion.div
             transition={{
@@ -101,7 +74,7 @@ export const TracingBeam = ({
               backgroundColor: scrollYProgress.get() > 0 ? "white" : "hsl(170, 100%, 70%)",
               borderColor: scrollYProgress.get() > 0 ? "white" : "hsl(170, 100%, 60%)",
             }}
-            className="h-2 w-2 border border-neutral-300 bg-white"
+            className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
         <svg

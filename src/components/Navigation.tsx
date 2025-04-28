@@ -5,47 +5,14 @@ import { Menu, X } from 'lucide-react';
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState<string>("hero");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
-      
-      // Detect which section is currently in view
-      const sections = ["about", "education", "work", "certifications", "contact"];
-      const scrollPosition = window.scrollY + 100; // Adding offset to improve accuracy
-      
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const offsetTop = element.offsetTop;
-          const offsetHeight = element.offsetHeight;
-          
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
     };
-    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80, // Offset for the header
-        behavior: 'smooth'
-      });
-      setIsMenuOpen(false);
-    }
-  };
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -57,41 +24,11 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a 
-              href="#about" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
-              className={`nav-link ${activeSection === "about" ? "text-primary" : ""}`}
-            >
-              About
-            </a>
-            <a 
-              href="#education" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("education"); }}
-              className={`nav-link ${activeSection === "education" ? "text-primary" : ""}`}
-            >
-              Education
-            </a>
-            <a 
-              href="#work" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("work"); }}
-              className={`nav-link ${activeSection === "work" ? "text-primary" : ""}`}
-            >
-              Work
-            </a>
-            <a 
-              href="#certifications" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("certifications"); }}
-              className={`nav-link ${activeSection === "certifications" ? "text-primary" : ""}`}
-            >
-              Certifications
-            </a>
-            <a 
-              href="#contact" 
-              onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
-              className={`nav-link ${activeSection === "contact" ? "text-primary" : ""}`}
-            >
-              Contact
-            </a>
+            <a href="#about" className="nav-link">About</a>
+            <a href="#education" className="nav-link">Education</a>
+            <a href="#work" className="nav-link">Work</a>
+            <a href="#certifications" className="nav-link">Certifications</a>
+            <a href="#contact" className="nav-link">Contact</a>
             <a 
               href="/resume.pdf" 
               className="ml-4 px-4 py-2 border border-primary text-primary font-mono
@@ -118,54 +55,19 @@ const Navigation = () => {
           isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}>
           <div className="flex flex-col space-y-8 items-center text-lg">
-            <a 
-              href="#about" 
-              className={`nav-link ${activeSection === "about" ? "text-primary" : ""}`}
-              onClick={(e) => { 
-                e.preventDefault(); 
-                scrollToSection("about"); 
-              }}
-            >
+            <a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               About
             </a>
-            <a 
-              href="#education" 
-              className={`nav-link ${activeSection === "education" ? "text-primary" : ""}`}
-              onClick={(e) => { 
-                e.preventDefault(); 
-                scrollToSection("education"); 
-              }}
-            >
+            <a href="#education" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Education
             </a>
-            <a 
-              href="#work" 
-              className={`nav-link ${activeSection === "work" ? "text-primary" : ""}`}
-              onClick={(e) => { 
-                e.preventDefault(); 
-                scrollToSection("work"); 
-              }}
-            >
+            <a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Work
             </a>
-            <a 
-              href="#certifications" 
-              className={`nav-link ${activeSection === "certifications" ? "text-primary" : ""}`}
-              onClick={(e) => { 
-                e.preventDefault(); 
-                scrollToSection("certifications"); 
-              }}
-            >
+            <a href="#certifications" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Certifications
             </a>
-            <a 
-              href="#contact" 
-              className={`nav-link ${activeSection === "contact" ? "text-primary" : ""}`}
-              onClick={(e) => { 
-                e.preventDefault(); 
-                scrollToSection("contact"); 
-              }}
-            >
+            <a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>
               Contact
             </a>
             <a 
