@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trophy } from "lucide-react";
+import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 const certifications = [
     {
       title: "CompTIA Linux+ Training",
@@ -115,24 +116,50 @@ const Certifications = () => {
               <Trophy className="h-5 w-5 text-primary" />
               Achievements
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 justify-center gap-6">
               {achievements.map((achievement, index) => (
-                <Card key={index} className="overflow-hidden card-hover border-primary/20">
-                  <CardHeader className="space-y-1">
-                    <CardTitle className="text-lg">{achievement.title}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{achievement.date}</p>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="aspect-video relative rounded-lg overflow-hidden bg-card">
-                      <img 
-                        src={achievement.image} 
+                <CardContainer key={index} className="inter-var mx-auto">
+                  <CardBody className="bg-card text-white relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-card dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border mx-auto">
+                    <CardItem
+                      translateZ="50"
+                      className="text-2xl md:text-3xl font-bold"
+                    >
+                      {achievement.title}
+                    </CardItem>
+                    <CardItem
+                      as="p"
+                      translateZ="60"
+                      className="text-base md:text-lg max-w-xl mt-2"
+                    >
+                      {achievement.description}
+                    </CardItem>
+                    <CardItem translateZ="100" className="w-full mt-4">
+                      <img
+                        src={achievement.image}
                         alt={achievement.title}
-                        className="object-cover w-full h-full"
+                        height="400"
+                        width="800"
+                        className="w-full max-h-60 object-contain rounded-xl group-hover/card:shadow-xl mx-auto bg-black"
                       />
+                    </CardItem>
+                    <div className="flex justify-between items-center mt-10">
+                      <CardItem
+                        translateZ={20}
+                        as="span"
+                        className="px-4 py-2 rounded-xl text-xs font-normal"
+                      >
+                        {achievement.date}
+                      </CardItem>
+                      <CardItem
+                        translateZ={20}
+                        as="span"
+                        className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                      >
+                        Achievement
+                      </CardItem>
                     </div>
-                    <p className="text-sm text-muted-foreground">{achievement.description}</p>
-                  </CardContent>
-                </Card>
+                  </CardBody>
+                </CardContainer>
               ))}
             </div>
           </div>

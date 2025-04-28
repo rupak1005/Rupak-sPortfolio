@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Cover } from '@/components/ui/cover';
+import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -35,20 +36,24 @@ const Hero = () => {
         <p className="text-muted-foreground max-w-lg mb-12 fade-in leading-relaxed">
           I'm a Software Engineer with expertise in Full-Stack Development, Machine Learning, and System Design. Strong problem-solving skills with 300+ DSA problems solved on LeetCode & Codeforces. Experience in building AI-powered applications, scalable web platforms, and automation bots.
         </p>
-        <a 
-          href="#work" 
-          className="inline-block bg-secondary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors duration-300"
-        >
-          View My Work
-        </a>
-        <a 
-          href="/resume.pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-secondary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors duration-300"
-        >
-          Download Resume
-        </a>
+        <div className="flex gap-4">
+          <a 
+            href="#work" 
+            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 rounded-full shadow-lg card-hover font-semibold text-lg group"
+          >
+            View My Work
+            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+          </a>
+          <a 
+            href="/resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 rounded-full shadow-lg card-hover font-semibold text-lg group"
+          >
+            Download Resume
+            <Download className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
+          </a>
+        </div>
       </div>
     </section>
   );
