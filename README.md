@@ -14,8 +14,10 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - **Optimized Performance** with **Vite**
 - **Dark Mode Support**
 - **Smooth Animations & Transitions**
-- **Fully Responsive Design**
-- **Deployed on Netlify**
+- **Custom 3D Cards, Tracing Beam, and Cover Effects**
+- **Reusable, Modular Components**
+- **Type-safe with TypeScript**
+
 
 ---
 
@@ -24,6 +26,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - **Frontend:** React + TypeScript + Vite
 - **UI Library:** ShadCN/UI + Tailwind CSS
 - **Icons:** Lucide React
+- **Animations:** Framer Motion
 - **Deployment:** Netlify
 
 ---
