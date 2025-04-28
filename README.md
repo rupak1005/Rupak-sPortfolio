@@ -80,6 +80,16 @@ This project is deployed using **Netlify**. To deploy it yourself:
  ┗ 📜 vite.config.ts # Vite configuration
 ```
 
+## Custom UI/UX Features
+
+- **3D Card Effect**: Interactive 3D cards for achievements (Aceternity UI)
+- **Tracing Beam**: Animated vertical scroll indicator
+- **Cover Effect**: Animated text highlight for hero section
+- **Card Hover Effects**: Consistent, modern hover states across all cards
+- **Responsive Navigation**: Mobile-friendly navbar with smooth transitions
+ 
+--- 
+
 ##  License
 This project is open-source and available under the **MIT License**.
 
