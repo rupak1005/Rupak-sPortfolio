@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -30,7 +31,7 @@ const Navigation = () => {
             <a href="#contact" className="nav-link">Contact</a>
             <a 
               href="/resume.pdf" 
-              className="ml-4 px-4 py-2 border border-primary text-primary font-mono rounded
+              className="ml-4 px-4 py-2 border border-primary text-primary font-mono
               hover:bg-primary/10 transform hover:-translate-y-1 transition-all duration-300 ease-in-out
               hover:shadow-lg hover:shadow-primary/10"
               target="_blank"
@@ -71,7 +72,7 @@ const Navigation = () => {
             </a>
             <a 
               href="/resume.pdf" 
-              className="mt-4 px-6 py-3 border border-primary text-primary font-mono rounded
+              className="mt-4 px-6 py-3 border border-primary text-primary font-mono
               hover:bg-primary/10 transition-all duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
