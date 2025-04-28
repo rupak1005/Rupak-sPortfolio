@@ -10,7 +10,7 @@ const projects = [
       github: "https://github.com/rupak1005/vigilant-incident-view",
       external: "https://incidentview.netlify.app"
     },
-    image: "/images/vigilant-incident-view.jpg"
+    image: "public/images/projects/vigilant-incident-view.jpg"
   },
   {
     title: "AI Legal Document Scanner",

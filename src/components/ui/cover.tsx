@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useId, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { useRef } from "react";
+import React, { useEffect, useId, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion"; // fix: import from 'framer-motion' not 'motion/react'
 import { cn } from "@/lib/utils";
 import { SparklesCore } from "@/components/ui/sparkles";
 
@@ -13,7 +12,6 @@ export const Cover = ({
   className?: string;
 }) => {
   const [hovered, setHovered] = useState(false);
-
   const ref = useRef<HTMLDivElement>(null);
 
   const [containerWidth, setContainerWidth] = useState(0);
@@ -21,10 +19,9 @@ export const Cover = ({
 
   useEffect(() => {
     if (ref.current) {
-      setContainerWidth(ref.current?.clientWidth ?? 0);
-
-      const height = ref.current?.clientHeight ?? 0;
-      const numberOfBeams = Math.floor(height / 10); // Adjust the divisor to control the spacing
+      setContainerWidth(ref.current.clientWidth ?? 0);
+      const height = ref.current.clientHeight ?? 0;
+      const numberOfBeams = Math.floor(height / 10);
       const positions = Array.from(
         { length: numberOfBeams },
         (_, i) => (i + 1) * (height / (numberOfBeams + 1))
@@ -38,31 +35,28 @@ export const Cover = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       ref={ref}
-      className="relative hover:bg-neutral-900  group/cover inline-block dark:bg-neutral-900 bg-neutral-100 px-2 py-2  transition duration-200 rounded-sm"
+      className={cn(
+    "relative group/cover inline-block px-2 py-2 transition duration-300 rounded-sm",
+    hovered
+    ? "bg-neutral-900 opacity-100 shadow-[0_0_20px_5px_rgba(255,255,255,0.2)]"
+    : "bg-transparent opacity-30",
+  "dark:bg-neutral-900"
+      )}
     >
+      {/* Background Effects */}
       <AnimatePresence>
         {hovered && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{
-              opacity: {
-                duration: 0.2,
-              },
-            }}
+            transition={{ opacity: { duration: 0.2 } }}
             className="h-full w-full overflow-hidden absolute inset-0"
           >
             <motion.div
-              animate={{
-                translateX: ["-50%", "0%"],
-              }}
+              animate={{ translateX: ["-50%", "0%"] }}
               transition={{
-                translateX: {
-                  duration: 10,
-                  ease: "linear",
-                  repeat: Infinity,
-                },
+                translateX: { duration: 10, ease: "linear", repeat: Infinity },
               }}
               className="w-[200%] h-full flex"
             >
@@ -86,6 +80,8 @@ export const Cover = ({
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Moving Beams */}
       {beamPositions.map((position, index) => (
         <Beam
           key={index}
@@ -93,11 +89,11 @@ export const Cover = ({
           duration={Math.random() * 2 + 1}
           delay={Math.random() * 2 + 1}
           width={containerWidth}
-          style={{
-            top: `${position}px`,
-          }}
+          style={{ top: `${position}px` }}
         />
       ))}
+
+      {/* Text Content */}
       <motion.span
         key={String(hovered)}
         animate={{
@@ -113,30 +109,20 @@ export const Cover = ({
         }}
         transition={{
           duration: 0.2,
-          x: {
-            duration: 0.2,
-            repeat: Infinity,
-            repeatType: "loop",
-          },
-          y: {
-            duration: 0.2,
-            repeat: Infinity,
-            repeatType: "loop",
-          },
-          scale: {
-            duration: 0.2,
-          },
-          filter: {
-            duration: 0.2,
-          },
+          x: { duration: 0.2, repeat: Infinity, repeatType: "loop" },
+          y: { duration: 0.2, repeat: Infinity, repeatType: "loop" },
+          scale: { duration: 0.2 },
+          filter: { duration: 0.2 },
         }}
         className={cn(
-          "dark:text-white inline-block text-neutral-900 relative z-20 group-hover/cover:text-white transition duration-200",
+          "inline-block relative z-20 text-white transition duration-200",
           className
         )}
       >
         {children}
       </motion.span>
+
+      {/* 4 Corner Dots */}
       <CircleIcon className="absolute -right-[2px] -top-[2px]" />
       <CircleIcon className="absolute -bottom-[2px] -right-[2px]" delay={0.4} />
       <CircleIcon className="absolute -left-[2px] -top-[2px]" delay={0.8} />
@@ -160,22 +146,17 @@ export const Beam = ({
   width?: number;
 } & React.ComponentProps<typeof motion.svg>) => {
   const id = useId();
-
   return (
     <motion.svg
-      width={width ?? "600"}
+      width={width}
       height="1"
-      viewBox={`0 0 ${width ?? "600"} 1`}
+      viewBox={`0 0 ${width} 1`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={cn("absolute inset-x-0 w-full", className)}
       {...svgProps}
     >
-      <motion.path
-        d={`M0 0.5H${width ?? "600"}`}
-        stroke={`url(#svgGradient-${id})`}
-      />
-
+      <motion.path d={`M0 0.5H${width}`} stroke={`url(#svgGradient-${id})`} />
       <defs>
         <motion.linearGradient
           id={`svgGradient-${id}`}
@@ -219,10 +200,14 @@ export const CircleIcon = ({
 }) => {
   return (
     <div
+    
       className={cn(
-        `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
+        "pointer-events-none animate-pulse group-hover/cover:hidden opacity-20 group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white group-hover/cover:bg-white",
         className
       )}
+      style={{
+        animationDelay: `${delay ?? 0}s`,
+      }}
     ></div>
   );
 };

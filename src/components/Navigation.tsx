@@ -19,7 +19,7 @@ const Navigation = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <a href="#" className="text-primary font-mono text-2xl hover:scale-110 transition-transform duration-300">RK.</a>
+          <a href="#" className="text-primary font-mono text-2xl hover:scale-110 transition-transform duration-300">Portfolio</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

@@ -45,7 +45,7 @@ const Index = () => {
       <RightSideLinks />
       <footer className="py-6 text-center text-sm text-muted-foreground">
         <div className="mb-2"><ViewCounter /></div>
-        <p>Design Inspired By Brittany Chiang</p>
+        <p>Design Inspired From Brittany Chiang</p>
       </footer>
     </div>
   );
