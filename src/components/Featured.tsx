@@ -59,7 +59,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/deadlyBot"
     },
-    image: "/images/projects/github.png"
+    image: "/images/projects/deadlybot.jpg"
   },
   {
     title: "DeadlyDots",
@@ -86,7 +86,7 @@ const projects = [
     links: {
       github: "/images/projects/github.png"
     },
-    image: "/images/projects/github.png"
+    image: "/images/projects/virtual-piano..jpg"
   },
   {
     title: "Spam Mail Prediction",
