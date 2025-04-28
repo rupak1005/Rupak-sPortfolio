@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
@@ -23,21 +24,21 @@ const Index = () => {
         <Hero />
         <TracingBeam className="mt-20">
           <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-            <div className="mb-20">
+            <section id="about" className="mb-20">
               <About />
-            </div>
-            <div className="mb-20">
+            </section>
+            <section id="education" className="mb-20">
               <Education />
-            </div>
-            <div className="mb-20">
+            </section>
+            <section id="work" className="mb-20">
               <Featured />
-            </div>
-            <div className="mb-20">
+            </section>
+            <section id="certifications" className="mb-20">
               <Certifications />
-            </div>
-            <div className="mb-20">
+            </section>
+            <section id="contact" className="mb-20">
               <Contact />
-            </div>
+            </section>
           </div>
         </TracingBeam>
       </main>
