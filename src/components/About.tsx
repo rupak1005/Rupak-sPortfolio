@@ -1,4 +1,16 @@
 import { motion } from "framer-motion";
+import { 
+  FileCode, 
+  FileType2, 
+  Atom, 
+  Server, 
+  Code2, 
+  Brain, 
+  Database, 
+  Network, 
+  Layers, 
+  Paintbrush 
+} from "lucide-react";
 
 const About = () => {
   return (
@@ -19,19 +31,19 @@ const About = () => {
             </p>
             <ul className="grid grid-cols-2 gap-2 mt-4">
               {[
-                "JavaScript (ES6+)",
-                "TypeScript",
-                "React",
-                "Node.js",
-                "Python",
-                "Machine Learning",
-                "MongoDB",
-                "Express",
-                "Next.js",
-                "TailwindCSS"
+                { name: "JavaScript (ES6+)", icon: <FileCode className="w-4 h-4 text-primary" /> },
+                { name: "TypeScript", icon: <FileType2 className="w-4 h-4 text-primary" /> },
+                { name: "React", icon: <Atom className="w-4 h-4 text-primary" /> },
+                { name: "Node.js", icon: <Server className="w-4 h-4 text-primary" /> },
+                { name: "Python", icon: <Code2 className="w-4 h-4 text-primary" /> },
+                { name: "Machine Learning", icon: <Brain className="w-4 h-4 text-primary" /> },
+                { name: "MongoDB", icon: <Database className="w-4 h-4 text-primary" /> },
+                { name: "Express", icon: <Network className="w-4 h-4 text-primary" /> },
+                { name: "Next.js", icon: <Layers className="w-4 h-4 text-primary" /> },
+                { name: "TailwindCSS", icon: <Paintbrush className="w-4 h-4 text-primary" /> }
               ].map((tech, i) => (
                 <li key={i} className="flex items-center gap-2">
-                  <span className="text-primary">▹</span> {tech}
+                  {tech.icon} {tech.name}
                 </li>
               ))}
             </ul>
