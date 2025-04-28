@@ -1,4 +1,4 @@
-import { Github, Instagram, Twitter, Linkedin, CodeXml } from 'lucide-react';
+import { Github, Linkedin, CodeXml } from 'lucide-react';
 
 const SocialLinks = () => {
   return (
@@ -12,24 +12,6 @@ const SocialLinks = () => {
           aria-label="GitHub"
         >
           <Github size={20} />
-        </a>
-        <a 
-          href="https://instagram.com/rupakxs" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="social-link-hover"
-          aria-label="Instagram"
-        >
-          <Instagram size={20} />
-        </a>
-        <a 
-          href="https://twitter.com/rupak1005" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="social-link-hover"
-          aria-label="Twitter"
-        >
-          <Twitter size={20} />
         </a>
         <a 
           href="https://linkedin.com/rupak1005" 
