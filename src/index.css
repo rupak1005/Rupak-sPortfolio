@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +22,7 @@
     --border: 217 32% 17%;
     --input: 217 32% 17%;
     --ring: 170 100% 70%;
-    --radius: 0.5rem;
+    --radius: 0;
   }
 
   html {

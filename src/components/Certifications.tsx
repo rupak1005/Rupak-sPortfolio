@@ -1,6 +1,8 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trophy } from "lucide-react";
 import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
+
 const certifications = [
     {
       title: "CompTIA Linux+ Training",
@@ -95,7 +97,7 @@ const Certifications = () => {
                     <p className="text-sm text-muted-foreground">{cert.issuer} • {cert.date}</p>
                   </CardHeader>
                   <CardContent>
-                    <div className="aspect-video relative rounded-lg overflow-hidden bg-card">
+                    <div className="aspect-video relative overflow-hidden bg-card">
                       <img 
                         src={cert.image} 
                         alt={cert.title}
@@ -117,7 +119,7 @@ const Certifications = () => {
             <div className="grid grid-cols-1 justify-center gap-6">
               {achievements.map((achievement, index) => (
                 <CardContainer key={index} className="inter-var mx-auto">
-                  <CardBody className="bg-card text-white relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-card dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border mx-auto">
+                  <CardBody className="bg-card text-white relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-card dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto p-6 border mx-auto">
                     <CardItem
                       translateZ="50"
                       className="text-2xl md:text-3xl font-bold"
@@ -137,21 +139,21 @@ const Certifications = () => {
                         alt={achievement.title}
                         height="400"
                         width="800"
-                        className="w-full max-h-60 object-contain rounded-xl group-hover/card:shadow-xl mx-auto bg-black"
+                        className="w-full max-h-60 object-contain group-hover/card:shadow-xl mx-auto bg-black"
                       />
                     </CardItem>
                     <div className="flex justify-between items-center mt-10">
                       <CardItem
                         translateZ={20}
                         as="span"
-                        className="px-4 py-2 rounded-xl text-xs font-normal"
+                        className="px-4 py-2 text-xs font-normal"
                       >
                         {achievement.date}
                       </CardItem>
                       <CardItem
                         translateZ={20}
                         as="span"
-                        className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                        className="px-4 py-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                       >
                         Achievement
                       </CardItem>

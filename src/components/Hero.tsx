@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Cover } from '@/components/ui/cover';
 import { ArrowRight, Download } from 'lucide-react';
@@ -35,7 +36,7 @@ const Hero = () => {
           <Cover>I build things for the web.</Cover>
         </h2>
         <div className="mb-6">
-          <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold text-base shadow">
+          <span className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary font-semibold text-base shadow">
             <ViewCounter />
           </span>
         </div>
@@ -45,7 +46,7 @@ const Hero = () => {
         <div className="flex gap-4">
           <a 
             href="#work" 
-            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 rounded-full shadow-lg card-hover font-semibold text-lg group"
+            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 shadow-lg card-hover font-semibold text-lg group"
           >
             View My Work
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -54,7 +55,7 @@ const Hero = () => {
             href="/resume.pdf" 
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 rounded-full shadow-lg card-hover font-semibold text-lg group"
+            className="inline-flex items-center gap-2 bg-[#141C2B] text-white py-3 px-6 shadow-lg card-hover font-semibold text-lg group"
           >
             Download Resume
             <Download className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
