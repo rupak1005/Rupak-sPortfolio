@@ -1,4 +1,3 @@
-
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Featured from "@/components/Featured";
@@ -10,6 +9,8 @@ import SplashScreen from "@/components/SplashScreen";
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
+import { TracingBeam } from "@/components/ui/tracing-beam";
+import { cn } from "@/lib/utils";
 
 const Index = () => {
   return (
@@ -19,11 +20,25 @@ const Index = () => {
       <Navigation />
       <main className="px-0 md:px-12 lg:px-24 pt-20">
         <Hero />
-        <About />
-        <Education />
-        <Featured />
-        <Certifications />
-        <Contact />
+        <TracingBeam className="mt-20">
+          <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+            <div className="mb-20">
+              <About />
+            </div>
+            <div className="mb-20">
+              <Education />
+            </div>
+            <div className="mb-20">
+              <Featured />
+            </div>
+            <div className="mb-20">
+              <Certifications />
+            </div>
+            <div className="mb-20">
+              <Contact />
+            </div>
+          </div>
+        </TracingBeam>
       </main>
       <SocialLinks />
       <RightSideLinks />

@@ -105,7 +105,7 @@ const projects = [
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
-    description: "A web development project built under CipherSchools’ KOC32 initiative.",
+    description: "A web development project built under CipherSchools' KOC32 initiative.",
     tags: ["Web Development", "JavaScript", "HTML & CSS"],
     links: {
       github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
@@ -123,54 +123,41 @@ const Featured = () => {
           <span className="numbered-heading">03.</span> Some Things I've Built
         </h2>
         
-        <div className="space-y-32">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className={`relative grid md:grid-cols-12 gap-4 items-center ${
-                index % 2 === 0 ? '' : 'md:text-right'
-              }`}
+              className="bg-card rounded-lg overflow-hidden shadow-md flex flex-col h-full card-hover"
             >
-              {/* Project Image */}
-              <div className={`md:col-span-7 relative aspect-video bg-card rounded-lg overflow-hidden group ${
-                index % 2 === 0 ? '' : 'md:order-last'
-              }`}>
-                <a 
-                  href={project.links.external || project.links.github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block w-full h-full relative"
-                >
-                  <img 
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="text-white font-bold">Go to Project</span>
-                  </div>
-                </a>
-              </div>
-
-              {/* Project Content */}
-              <div className="md:col-span-5">
+              <a 
+                href={project.links.external || project.links.github} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full h-48 relative"
+              >
+                <img 
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-primary/10 hover:bg-transparent transition-colors duration-300" />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-white font-bold">Go to Project</span>
+                </div>
+              </a>
+              <div className="flex-1 flex flex-col p-6">
                 <p className="font-mono text-primary mb-2">Featured Project</p>
                 <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                <div className="bg-card p-6 rounded-lg mb-4">
+                <div className="mb-4 flex-1">
                   <p className="text-muted-foreground">{project.description}</p>
                 </div>
-                <ul className={`flex flex-wrap gap-3 text-sm font-mono mb-4 ${
-                  index % 2 === 0 ? '' : 'md:justify-end'
-                }`}>
+                <ul className="flex flex-wrap gap-3 text-sm font-mono mb-4">
                   {project.tags.map((tag, i) => (
                     <li key={i} className="text-primary">{tag}</li>
                   ))}
                 </ul>
-                <div className={`flex gap-4 ${
-                  index % 2 === 0 ? '' : 'md:justify-end'
-                }`}>
+                <div className="flex gap-4 mt-auto">
                   {project.links.github && (
                     <a 
                       href={project.links.github}

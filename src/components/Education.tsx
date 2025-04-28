@@ -28,7 +28,7 @@ const Education = () => {
         </h2>
         <div className="space-y-12">
           {education.map((edu, index) => (
-            <div key={index} className="bg-card rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <div key={index} className="bg-card rounded-lg p-6 card-hover">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-bold text-foreground">{edu.school}</h3>
                 <span className="text-primary font-mono">{edu.duration}</span>
