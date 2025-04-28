@@ -119,9 +119,7 @@ const Featured = () => {
   return (
     <section id="work" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="section-heading mb-16">
-          <span className="numbered-heading">03.</span> Some Things I've Built
-        </h2>
+        <h2 className="section-heading mb-16">Some Things I've Built</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (

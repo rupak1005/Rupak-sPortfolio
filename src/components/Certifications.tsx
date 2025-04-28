@@ -78,9 +78,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="section-heading mb-16">
-          <span className="numbered-heading">04.</span> Certifications & Achievements
-        </h2>
+        <h2 className="section-heading mb-16">Certifications & Achievements</h2>
         
         <div className="space-y-12">
           {/* Certifications */}

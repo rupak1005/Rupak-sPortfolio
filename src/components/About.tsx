@@ -2,9 +2,7 @@ const About = () => {
   return (
     <section id="about" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="section-heading mb-16">
-          <span className="numbered-heading">01.</span> About Me
-        </h2>
+        <h2 className="section-heading mb-16">About Me</h2>
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-muted-foreground">
             <p>

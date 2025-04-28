@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -24,11 +23,11 @@ const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="nav-link"><span className="font-mono text-primary text-sm mr-1">01.</span> About</a>
-            <a href="#education" className="nav-link"><span className="font-mono text-primary text-sm mr-1">02.</span> Education</a>
-            <a href="#work" className="nav-link"><span className="font-mono text-primary text-sm mr-1">03.</span> Work</a>
-            <a href="#certifications" className="nav-link"><span className="font-mono text-primary text-sm mr-1">04.</span> Certifications</a>
-            <a href="#contact" className="nav-link"><span className="font-mono text-primary text-sm mr-1">05.</span> Contact</a>
+            <a href="#about" className="nav-link">About</a>
+            <a href="#education" className="nav-link">Education</a>
+            <a href="#work" className="nav-link">Work</a>
+            <a href="#certifications" className="nav-link">Certifications</a>
+            <a href="#contact" className="nav-link">Contact</a>
             <a 
               href="/resume.pdf" 
               className="ml-4 px-4 py-2 border border-primary text-primary font-mono rounded
@@ -56,19 +55,19 @@ const Navigation = () => {
         }`}>
           <div className="flex flex-col space-y-8 items-center text-lg">
             <a href="#about" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">01.</span> About
+              About
             </a>
             <a href="#education" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">02.</span> Education
+              Education
             </a>
             <a href="#work" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">03.</span> Work
+              Work
             </a>
             <a href="#certifications" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">04.</span> Certifications
+              Certifications
             </a>
             <a href="#contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>
-              <span className="font-mono text-primary text-sm block text-center mb-1">05.</span> Contact
+              Contact
             </a>
             <a 
               href="/resume.pdf" 

@@ -23,9 +23,7 @@ const Education = () => {
   return (
     <section id="education" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="section-heading mb-16">
-          <span className="numbered-heading">02.</span> Education
-        </h2>
+        <h2 className="section-heading mb-16">Education</h2>
         <div className="space-y-12">
           {education.map((edu, index) => (
             <div key={index} className="bg-card rounded-lg p-6 card-hover">
