@@ -47,7 +47,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/deadlyBot"
     },
-    image: "/images/projects/deadlybot.jpg"
+    image: "/images/projects/sXK51.png"
   },
   {
     title: "DeadlyDots",
@@ -65,7 +65,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtualDrum"
     },
-    image: "/images/projects/virtualdrum.png"
+    image: "/home/deadlyr/Rupak-sPortfolio/public/images/sXK51.png"
   },
   {
     title: "Virtual Piano",
@@ -74,7 +74,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtual_piano"
     },
-    image: "/images/projects/virtualpiano.jpeg"
+    image: "/images/projects/sXK51.png"
   },
   {
     title: "Spam Mail Prediction",
@@ -83,7 +83,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Spam-mail-prediction"
     },
-    image: "/images/projects/spam-mail.png"
+    image: "/images/projects/sXK51.png"
   },
   {
     title: "Diabetes Prediction System",
@@ -92,7 +92,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system"
     },
-    image: "/images/projects/diabetes-predictor.png"
+    image: "/images/projects/sXK51.png"
   },
   {
     title: "Sonar Object Classification",
@@ -101,7 +101,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Sonar-Object-Classification"
     },
-    image: "/images/projects/sonar-object.png"
+    image: "/images/projects/sXK51.png"
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
@@ -110,7 +110,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
     },
-    image: "/images/projects/webmajesty.png"
+    image: "/images/projects/sXK51.png"
   }
 ];
 

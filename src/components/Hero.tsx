@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Cover } from '@/components/ui/cover';
 
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -29,7 +30,7 @@ const Hero = () => {
           Rupak Kumar.
         </h1>
         <h2 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6 fade-in">
-          I build things for the web.
+          <Cover>I build things for the web.</Cover>
         </h2>
         <p className="text-muted-foreground max-w-lg mb-12 fade-in leading-relaxed">
           I'm a Software Engineer with expertise in Full-Stack Development, Machine Learning, and System Design. Strong problem-solving skills with 300+ DSA problems solved on LeetCode & Codeforces. Experience in building AI-powered applications, scalable web platforms, and automation bots.
