@@ -77,16 +77,16 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtualDrum"
     },
-    image: "/images/projects/github.png"
+    image: "/public/images/projects/drum.jpg"
   },
   {
     title: "Virtual Piano",
     description: "A virtual AI-powered piano that uses OpenVINO for hand tracking and Pygame for sound playback. Detects hand gestures to play keys in real-time.",
     tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
     links: {
-      github: "/images/projects/github.png"
+      github: "https://github.com/rupak1005/virtual_piano"
     },
-    image: "/images/projects/virtual-piano..jpg"
+    image: "/images/projects/virtualpiano.jpg"
   },
   {
     title: "Spam Mail Prediction",
@@ -95,7 +95,7 @@ const projects = [
     links: {
       github: "/images/projects/github.png"
     },
-    image: "/images/projects/github.png"
+    image: "public/images/projects/spamemail.jpg"
   },
   {
     title: "Diabetes Prediction System",
@@ -104,7 +104,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system"
     },
-    image: "/images/projects/github.png"
+    image: "public/images/projects/diabetes.jpg"
   },
   {
     title: "Sonar Object Classification",
@@ -113,7 +113,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Sonar-Object-Classification"
     },
-    image: "/images/projects/github.png"
+    image: "public/images/projects/sonar.jpg"
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
@@ -122,7 +122,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
     },
-    image: "/images/projects/github.png"
+    image: "public/images/projects/cipherschools.jpg"
   },
   
 ];

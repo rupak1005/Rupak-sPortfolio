@@ -38,7 +38,7 @@ export const Cover = ({
       className={cn(
     "relative group/cover inline-block px-2 py-2 transition duration-300 rounded-sm",
     hovered
-    ? "bg-neutral-900 opacity-100 shadow-[0_0_20px_5px_rgba(255,255,255,0.2)]"
+    ? "bg-neutral-900 opacity-100"
     : "bg-transparent opacity-30",
   "dark:bg-neutral-900"
       )}
