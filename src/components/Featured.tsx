@@ -1,5 +1,7 @@
+
 import { ExternalLink, Github } from 'lucide-react';
 import ViewCounter from '@/components/ViewCounter';
+import { TextReveal } from './ui/text-reveal';
 
 const projects = [
   {
@@ -132,13 +134,15 @@ const Featured = () => {
   return (
     <section id="work" className="py-24 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="section-heading mb-16">Some Things I've Built</h2>
+        <TextReveal>
+          <h2 className="section-heading mb-16">Some Things I've Built</h2>
+        </TextReveal>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-card rounded-lg overflow-hidden shadow-md flex flex-col h-full card-hover"
+              className="bg-card shadow-md flex flex-col h-full card-hover"
             >
               <a 
                 href={project.links.external || project.links.github} 
@@ -158,38 +162,52 @@ const Featured = () => {
                 </div>
               </a>
               <div className="flex-1 flex flex-col p-6">
-                <p className="font-mono text-primary mb-2">Featured Project</p>
-                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                <TextReveal delay={0.1} threshold={0.3}>
+                  <p className="font-mono text-primary mb-2">Featured Project</p>
+                </TextReveal>
+                
+                <TextReveal delay={0.2} threshold={0.3}>
+                  <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                </TextReveal>
+                
                 <div className="mb-4 flex-1">
-                  <p className="text-muted-foreground">{project.description}</p>
+                  <TextReveal delay={0.3} threshold={0.3}>
+                    <p className="text-muted-foreground">{project.description}</p>
+                  </TextReveal>
                 </div>
-                <ul className="flex flex-wrap gap-3 text-sm font-mono mb-4">
-                  {project.tags.map((tag, i) => (
-                    <li key={i} className="text-primary">{tag}</li>
-                  ))}
-                </ul>
-                <div className="flex gap-4 mt-auto">
-                  {project.links.github && (
-                    <a 
-                      href={project.links.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  )}
-                  {project.links.external && (
-                    <a 
-                      href={project.links.external}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                  )}
-                </div>
+                
+                <TextReveal delay={0.4} threshold={0.3}>
+                  <ul className="flex flex-wrap gap-3 text-sm font-mono mb-4">
+                    {project.tags.map((tag, i) => (
+                      <li key={i} className="text-primary">{tag}</li>
+                    ))}
+                  </ul>
+                </TextReveal>
+                
+                <TextReveal delay={0.5} threshold={0.3}>
+                  <div className="flex gap-4 mt-auto">
+                    {project.links.github && (
+                      <a 
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
+                    {project.links.external && (
+                      <a 
+                        href={project.links.external}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                  </div>
+                </TextReveal>
               </div>
             </div>
           ))}
