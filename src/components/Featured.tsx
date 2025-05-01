@@ -12,7 +12,7 @@ const projects = [
       github: "https://github.com/rupak1005/vigilant-incident-view",
       external: "https://incidentview.netlify.app"
     },
-    image: "public/images/projects/vigilant-incident-view.jpg"
+    image: "/images/projects/vigilant-incident-view.jpg"
   },
   {
     title: "AI Legal Document Scanner",
@@ -79,7 +79,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/virtualDrum"
     },
-    image: "/public/images/projects/drum.jpg"
+    image: "/images/projects/drum.jpg"
   },
   {
     title: "Virtual Piano",
@@ -95,9 +95,9 @@ const projects = [
     description: "Classifies emails as Spam or Ham using Logistic Regression. Processes text data with TfidfVectorizer and predicts email categories.",
     tags: ["Machine Learning", "NLP", "Scikit-Learn"],
     links: {
-      github: "/images/projects/github.png"
+      github: "https://github.com/rupak1005/Spam-mail-prediction"
     },
-    image: "public/images/projects/spamemail.jpg"
+    image: "/images/projects/spamemail.jpg"
   },
   {
     title: "Diabetes Prediction System",
@@ -106,7 +106,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/diabetes-prediction-system"
     },
-    image: "public/images/projects/diabetes.jpg"
+    image: "/images/projects/diabetes.jpg"
   },
   {
     title: "Sonar Object Classification",
@@ -115,7 +115,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Sonar-Object-Classification"
     },
-    image: "public/images/projects/sonar.jpg"
+    image: "/images/projects/sonar.jpg"
   },
   {
     title: "WebMajesty KOC32 (CipherSchools)",
@@ -124,7 +124,7 @@ const projects = [
     links: {
       github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
     },
-    image: "public/images/projects/cipherschools.jpg"
+    image: "/images/projects/cipherschools.jpg"
   },
   
 ];
