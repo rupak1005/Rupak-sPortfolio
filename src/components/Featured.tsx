@@ -5,6 +5,16 @@ import { TextReveal } from './ui/text-reveal';
 
 const projects = [
   {
+    title: "Heartbeats & Roses",
+    description: "A beautiful and immersive Valentine's Day web experience featuring 3D heart animations, floating roses, ambient music, and smooth interactions. Built for creativity and emotional expression on the web.",
+    tags: ["React", "TailwindCSS", "JavaScript", "Three.js", "GSAP" , "Framer Motion"],
+    links: {
+      github: "https://github.com/rupak1005/Heartbeats-Roses",
+      external: "https://heartbeatroses.netlify.app/"
+    },
+    image: "/images/projects/heartbeats-roses.jpg" 
+  },
+  {
     title: "AI Safety Incident Dashboard",
     description: "A fully featured, performant, and responsive AI Safety Incident Dashboard. Features glassmorphism UI, dark/light mode, animated transitions, persistent state, CSV export, and rich data visualizations.",
     tags: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Recharts"],

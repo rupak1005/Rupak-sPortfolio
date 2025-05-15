@@ -15,8 +15,8 @@ const Navigation = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/90 backdrop-blur-md shadow-lg' : ''
+    <header className={`fixed  w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-background/70 backdrop-blur-md shadow-lg' : ''
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
