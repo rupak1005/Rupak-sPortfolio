@@ -5,9 +5,7 @@
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experience in web development. Built using **React, Vite, TypeScript, shadcn/ui, and Tailwind CSS**.
 
  **Live Site:** [Rupak's Portfolio](https://rupak-s.netlify.app)
-
 ---
-
 ##  Features
 
 - **Modern UI** with **ShadCN + Tailwind**
