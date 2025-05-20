@@ -41,7 +41,6 @@ cd Rupak-sPortfolio
 ```sh
 npm install
 ```
-
 ### 3️⃣ Run Locally
 ```sh
 npm run dev
