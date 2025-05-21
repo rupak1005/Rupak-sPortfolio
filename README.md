@@ -16,7 +16,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - **Reusable, Modular Components**
 - **Type-safe with TypeScript**
 
-
 ---
 
 ##  Tech Stack
