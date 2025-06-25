@@ -5,6 +5,26 @@ import { TextReveal } from './ui/text-reveal';
 
 const projects = [
   {
+    title: "User Voice Canvas",
+    description: "A full-stack feedback collection system enabling users to submit and manage feedback with categorization. Features dashboard viewing, MongoDB storage, and RESTful API endpoints. Supports both local and cloud MongoDB deployments.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "REST API"],
+    links: {
+      github: "https://github.com/rupak1005/user-voice-canvas-main",
+      external: "https://user-voice-canvas-main-5.onrender.com/" 
+    },
+    image: "/images/projects/user-voice-canvas.jpg" 
+  },
+  {
+    title: "Obyss Agency",
+    description: "An immersive web experience featuring smooth scrolling, creative loaders, magnetic cursors, scroll-based animations, and interactive image effects. Built with Locomotive Scroll, GSAP, ScrollTrigger, and Shery.js for fluid parallax, dynamic visuals, and interactive UI.",
+    tags: ["HTML", "CSS", "JavaScript", "GSAP", "Locomotive Scroll", "ScrollTrigger", "Shery.js"],
+    links: {
+      github: "https://github.com/rupak1005/obyss-agency",
+      external: "https://rupak1005.github.io/obyss-agency/"
+    },
+    image: "/images/projects/obyss-agency.jpg" 
+  },
+  {
     title: "Heartbeats & Roses",
     description: "A beautiful and immersive Valentine's Day web experience featuring 3D heart animations, floating roses, ambient music, and smooth interactions. Built for creativity and emotional expression on the web.",
     tags: ["React", "TailwindCSS", "JavaScript", "Three.js", "GSAP" , "Framer Motion"],
