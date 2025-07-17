@@ -89,7 +89,7 @@ const Certifications = () => {
               <Trophy className="h-5 w-5 text-primary" />
               Certifications
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (
                 <Card key={index} className="overflow-hidden card-hover border-primary/20">
                   <CardHeader className="space-y-1">

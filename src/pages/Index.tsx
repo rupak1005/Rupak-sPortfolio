@@ -22,7 +22,7 @@ const Index = () => {
       <main className="px-0 md:px-12 lg:px-24 pt-20">
         <Hero />
         <TracingBeam className="mt-20">
-          <div className="max-w-2xl mx-auto antialiased pt-4 relative">
+          <div className="max-w-4xl mx-auto antialiased pt-4 relative">
             <div className="mb-20">
               <About />
             </div>

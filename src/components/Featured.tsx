@@ -5,6 +5,17 @@ import { TextReveal } from './ui/text-reveal';
 
 const projects = [
   {
+  title: "AdvanceSpotify",
+  description: "A full-stack, feature-rich music streaming platform inspired by Spotify. It allows users to stream songs, manage playlists and albums, and interact in real-time using an integrated chat system. The project includes separate admin capabilities for managing songs and albums. Built using MERN stack with support for secure authentication, role-based access, and interactive dashboards for both users and admins.",
+  tags: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT", "TailwindCSS", "MERN"],
+  links: {
+    github: "https://github.com/rupak1005/AdvanceSpotify",
+    external: "https://github.com/rupak1005/AdvanceSpotify"  // leave empty or replace with deployed URL if hosted
+  },
+  image: "/images/projects/advancespotify.jpg"  // replace with correct image path or filename
+},
+
+  {
     title: "User Voice Canvas",
     description: "A full-stack feedback collection system enabling users to submit and manage feedback with categorization. Features dashboard viewing, MongoDB storage, and RESTful API endpoints. Supports both local and cloud MongoDB deployments.",
     tags: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "REST API"],
@@ -168,7 +179,7 @@ const Featured = () => {
           <h2 className="section-heading mb-16">Some Things I've Built</h2>
         </TextReveal>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
