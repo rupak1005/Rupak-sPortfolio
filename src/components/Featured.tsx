@@ -10,7 +10,7 @@ const projects = [
   tags: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT", "TailwindCSS", "MERN"],
   links: {
     github: "https://github.com/rupak1005/AdvanceSpotify",
-    external: "https://github.com/rupak1005/AdvanceSpotify"  // leave empty or replace with deployed URL if hosted
+    external: "https://advancespotify.onrender.com/"  // leave empty or replace with deployed URL if hosted
   },
   image: "/images/projects/advancespotify.jpg"  // replace with correct image path or filename
 },
