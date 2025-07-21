@@ -5,14 +5,14 @@ import { TextReveal } from './ui/text-reveal';
 
 const projects = [
   {
-  title: "AdvanceSpotify",
+  title: "Syncify",
   description: "A full-stack, feature-rich music streaming platform inspired by Spotify. It allows users to stream songs, manage playlists and albums, and interact in real-time using an integrated chat system. The project includes separate admin capabilities for managing songs and albums. Built using MERN stack with support for secure authentication, role-based access, and interactive dashboards for both users and admins.",
   tags: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT", "TailwindCSS", "MERN"],
   links: {
-    github: "https://github.com/rupak1005/AdvanceSpotify",
+    github: "https://github.com/rupak1005/Syncify",
     external: "https://advancespotify.onrender.com/"  // leave empty or replace with deployed URL if hosted
   },
-  image: "/images/projects/advancespotify.jpg"  // replace with correct image path or filename
+  image: "/images/projects/Syncify.jpg"  // replace with correct image path or filename
 },
 
   {
@@ -86,16 +86,6 @@ const projects = [
     image: "/images/projects/manageo-productum.jpg"
   },
   {
-    title: "Chat-App",
-    description: "Snappy is a chat application built with the power of the MERN Stack.",
-    tags: ["MERN Stack", "React", "TypeScript", "Tailwind CSS"],
-    links: {
-      github: "https://github.com/rupak1005/chat-app",
-      external: "https://snappy-chat-app.vercel.app/"
-    },
-    image: "/images/projects/chat-app.png"
-  },
-  {
     title: "DeadlyBot",
     description: "DeadlyRBot is a Telegram bot that provides lecture timetables, reminders, and automated daily notifications using the Telegram Bot API.",
     tags: ["Python", "Telegram API", "Automation"],
@@ -112,61 +102,7 @@ const projects = [
       github: "https://github.com/rupak1005/deadlydots"
     },
     image: "/images/projects/deadlydots.png"
-  },
-  {
-    title: "Virtual Drum",
-    description: "An AI-powered virtual drum kit using OpenCV for hand tracking and Pygame for real-time sound playback. Play drums using hand gestures!",
-    tags: ["AI", "OpenCV", "Pygame"],
-    links: {
-      github: "https://github.com/rupak1005/virtualDrum"
-    },
-    image: "/images/projects/drum.jpg"
-  },
-  {
-    title: "Virtual Piano",
-    description: "A virtual AI-powered piano that uses OpenVINO for hand tracking and Pygame for sound playback. Detects hand gestures to play keys in real-time.",
-    tags: ["AI", "OpenVINO", "Hand Tracking", "Pygame"],
-    links: {
-      github: "https://github.com/rupak1005/virtual_piano"
-    },
-    image: "/images/projects/virtualpiano.jpg"
-  },
-  {
-    title: "Spam Mail Prediction",
-    description: "Classifies emails as Spam or Ham using Logistic Regression. Processes text data with TfidfVectorizer and predicts email categories.",
-    tags: ["Machine Learning", "NLP", "Scikit-Learn"],
-    links: {
-      github: "https://github.com/rupak1005/Spam-mail-prediction"
-    },
-    image: "/images/projects/spamemail.jpg"
-  },
-  {
-    title: "Diabetes Prediction System",
-    description: "A machine learning system that predicts whether a person is diabetic based on medical features using an SVM classifier.",
-    tags: ["Machine Learning", "SVM", "Healthcare"],
-    links: {
-      github: "https://github.com/rupak1005/diabetes-prediction-system"
-    },
-    image: "/images/projects/diabetes.jpg"
-  },
-  {
-    title: "Sonar Object Classification",
-    description: "Classifies sonar signals as rocks or mines using Logistic Regression.",
-    tags: ["Machine Learning", "Logistic Regression"],
-    links: {
-      github: "https://github.com/rupak1005/Sonar-Object-Classification"
-    },
-    image: "/images/projects/sonar.jpg"
-  },
-  {
-    title: "WebMajesty KOC32 (CipherSchools)",
-    description: "A web development project built under CipherSchools' KOC32 initiative.",
-    tags: ["Web Development", "JavaScript", "HTML & CSS"],
-    links: {
-      github: "https://github.com/rupak1005/Webmajesty_KOC32_CipherSchools"
-    },
-    image: "/images/projects/cipherschools.jpg"
-  },
+  }
   
 ];
 
