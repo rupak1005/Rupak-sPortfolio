@@ -6,12 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FadeExample from "./components/FadeExample";
-import useSmoothScroll from "./hooks/useSmoothScroll";
+// import useSmoothScroll from "./hooks/useSmoothScroll";
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  useSmoothScroll();
+  // useSmoothScroll();
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
