@@ -2,8 +2,19 @@
 import { ExternalLink, Github } from 'lucide-react';
 import ViewCounter from '@/components/ViewCounter';
 import { TextReveal } from './ui/text-reveal';
+import { Description } from '@radix-ui/react-toast';
 
 const projects = [
+  {
+    title:"Socially",
+    description:"A modern, full-featured social media platform built with Next.js 15, featuring real-time interactions, user authentication, and a beautiful responsive design.",
+    tags:["Next.js", "TailwindCSS", "TypeScript", "Shadcn/ui", "React", "Node.js", "PostgresSQL","PrismaORM","UploadThing","Clerk" ],
+    links:{
+      github:"https://github.com/rupak1005/socially",
+      external:"https://socially-neon.vercel.app/"
+    },
+    image:"/images/projects/socially.png"
+  },
   {
   title: "Syncify",
   description: "A full-stack, feature-rich music streaming platform inspired by Spotify. It allows users to stream songs, manage playlists and albums, and interact in real-time using an integrated chat system. The project includes separate admin capabilities for managing songs and albums. Built using MERN stack with support for secure authentication, role-based access, and interactive dashboards for both users and admins.",
